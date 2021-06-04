@@ -1,0 +1,160 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+html,
+#root,
+.App {
+  width: 100%;
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://i.ibb.co/MCv3gg3/classic-wallpaper.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.start-button {
+  width: 20%;
+  height: 20%;
+  align-self: center;
+  margin: 0 auto;
+  border: #478baf solid 2px;
+  border-radius: 50px;
+  background-color: #404040;
+  color: #478baf;
+  font-size: 50px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.start-button:hover {
+  border: solid #404040 2px;
+  cursor: pointer;
+  background-color: #478baf;
+  color: #404040;
+}
+
+.game-statuses {
+  color: #478baf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5%;
+  width: 60%;
+  margin-bottom: 2.3%;
+}
+
+.game-status {
+  font-size: 35px;
+  height: 100%;
+  width: 33%;
+}
+
+.card-holder {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  height: 76%;
+  margin: 2% auto;
+}
+
+.flip-card {
+  border-radius: 10px;
+  margin: 0.5% 2.5%;
+  background-color: transparent;
+  width: 20%;
+  height: 20%;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.flip-card-front,
+.flip-card-back {
+  border-radius: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-image: url("https://i.ibb.co/3CxNjMx/cardback.jpg");
+  background-size: 100% 100%;
+}
+
+.flip-card-back {
+  transform: rotateX(180deg);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  width: 50%;
+}
+
+.modal-content button {
+  width: 20%;
+  font-size: large;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: black;
+  background-color: white;
+}
+
+.modal-content button:hover {
+  cursor: pointer;
+  color: white;
+  border: 1px white solid;
+  background-color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+.shown {
+  display: block;
+}
